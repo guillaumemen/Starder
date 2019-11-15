@@ -1,0 +1,5 @@
+CREATE DATABASE Starder;
+CREATE USER 'starderDbUser'@localhost IDENTIFIED BY 'starderDbUser';
+GRANT USAGE ON *.* TO 'starderDbUser'@localhost IDENTIFIED BY 'starderDbUser';
+GRANT ALL privileges ON `Starder`.* TO 'starderDbUser'@localhost;
+FLUSH PRIVILEGES;
