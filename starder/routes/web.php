@@ -22,3 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/* Ajout de Louis */
+Route::group(['middleware' => ['role:C3PO']], function()
+{
+    Route::get('/C3PO', 'C3P0Controller@index')->name('C3PO');
+});
