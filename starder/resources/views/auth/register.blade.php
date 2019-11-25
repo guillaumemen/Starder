@@ -1,6 +1,44 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@section('content')
+    <title>Starder Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            background-color: #262626;
+            color: #FFE919;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 200;
+            height: 100vh;
+        }
+        .card-header {
+            padding-top: 25%;
+            padding-bottom: 5%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: 75px;
+        }
+        .form-group {
+            color: #fff066;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-group a{
+            color: #8080ff;
+        }
+        </style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -74,4 +112,5 @@
         </div>
     </div>
 </div>
-@endsection
+</head>
+</html>
