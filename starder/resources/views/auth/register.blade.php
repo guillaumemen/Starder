@@ -46,14 +46,14 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+                    <form action='/register' method="POST">
+                        {{csrf_field()}}
 
                         <div class="form-group row">
-                            <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('first Name') }}</label>
+                            <label for="first_name" class="col-md-4 col-form-label text-md-right">{{ __('first Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="last_name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
+                                <input id="first_name" type="text" class="form-control @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
 
                                 @error('first_name')
                                     <span class="invalid-feedback" role="alert">
@@ -110,6 +110,20 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="espece" class="col-md-4 col-form-label text-md-right">{{ __('espece') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="espece" type="text" class="form-control @error('espece') is-invalid @enderror" name="espece" value="{{ old('espece') }}" required autocomplete="espece" autofocus>
+
+                                @error('espece')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                         </div>
 

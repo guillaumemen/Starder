@@ -24,6 +24,7 @@ Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
 
+Route::post('/register', 'RegisterController@create');
 
 /* Ajout de Louis */
 Auth::routes();
