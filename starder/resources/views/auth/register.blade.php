@@ -114,12 +114,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="espece" class="col-md-4 col-form-label text-md-right">{{ __('espece') }}</label>
+                            <label for="species" class="col-md-4 col-form-label text-md-right">{{ __('species') }}</label>
 
                             <div class="col-md-6">
-                                <input id="espece" type="text" class="form-control @error('espece') is-invalid @enderror" name="espece" value="{{ old('espece') }}" required autocomplete="espece" autofocus>
+                                <input id="species" type="text" class="form-control @error('species') is-invalid @enderror" name="species" value="{{ old('species') }}" required autocomplete="species" autofocus>
 
-                                @error('espece')
+                                @error('species')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -128,8 +128,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('side') }}</label>
-                            <select>
+                            <label for="side" class="col-md-4 col-form-label text-md-right">{{ __('side') }}</label>
+                            <select id="side" type="text" class="form-control @error('side') is-invalid @enderror" name="side" value="{{ old('side') }}" required autocomplete="side" autofocus>
                                 <optgroup label="Claire">
                                     <option value="C3PO">C3PO (Juste un verre)</option>
                                     <option value="Padme_Amidala">Padme Amidala (Une simple rencontre)</option>
