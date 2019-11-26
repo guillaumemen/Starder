@@ -127,6 +127,22 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('side') }}</label>
+                            <select>
+                                <optgroup label="Claire">
+                                    <option value="C3PO">C3PO (Juste un verre)</option>
+                                    <option value="Padme_Amidala">Padme Amidala (Une simple rencontre)</option>
+                                    <option value="Yoda">Yoda (L'ame soeur)</option>
+                                </optgroup>
+                                <optgroup label="Obscure">
+                                    <option value="Kaylo_Ren">Kaylo Ren (Un verre voir plus)</option>
+                                    <option value="Dark_Vador">Dark Vador (Sex-friend)</option>
+                                    <option value="Palpatine">Palpatine (Droit au but)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

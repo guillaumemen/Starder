@@ -69,7 +69,7 @@
             <div class="top-right links">
                 <a href="{{ url('/docs/overview.md') }}" target="_blank">Docs</a>
                 <a href="https://github.com/louisMAURY/Starder" target="_blank">GitHub</a>
-                <a href="searchpage.blade.php" target="_blank">Search</a>
+                <a href="{{ url('/views/searchpage.blade.php')}}" target="_blank">Search</a>
             </div>
 
             <div class="content">
