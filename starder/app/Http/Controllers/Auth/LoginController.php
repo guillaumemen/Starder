@@ -26,45 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    /*protected $redirectTo = '/home';*/
-
-    /* Ajout de Louis */
-    protected function redirectTo()
-    {
-        $user = auth()->user();
-        $roles = $user->getRoleNames();
-
-        $roles = $user->roles->pluck('name');
-
-        if ($roles->contains('C3PO'))
-        {
-            return 'C3PO';
-        }
-        if ($roles->contains('Padme_Amidala'))
-        {
-            return 'Padme_Amidala';
-        }
-        if ($roles->contains('Yoda'))
-        {
-            return 'Yoda';
-        }
-        if ($roles->contains('Kaylo_Ren'))
-        {
-            return 'Kaylo_Ren';
-        }
-        if ($roles->contains('Dark_Vador'))
-        {
-            return 'Dark_Vador';
-        }
-        if ($roles->contains('Palpatine'))
-        {
-            return 'Palpatine';
-        }
-        else
-        {
-            return '/home';
-        }
-    }
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
