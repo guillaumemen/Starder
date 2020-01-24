@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('species');
             $table->string('side');
+            $table->string('avatar')->default('default.jpg');
+            $table->string('description')->default(" ");
             $table->rememberToken();
             $table->timestamps();
         });

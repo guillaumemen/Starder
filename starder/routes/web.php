@@ -24,5 +24,13 @@ Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
 
+Auth::routes();
+
+Route::post('home', 'UserController@update_avatar');
+
+//Auth::routes();
+//
+//Route::post('home', 'UserController@update_description');
+
 //Route::post('/register', 'RegisterController@create');
 

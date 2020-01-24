@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Be right back.</title>
+    <title>Et bah alors ? On s'est perdu ?</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -36,7 +36,7 @@
 <body>
 <div class="container">
     <div class="content">
-        <div class="title">Be right back.</div>
+        <div class="title">Et bah alors ? On s'est perdu ?</div>
     </div>
 </div>
 </body>
